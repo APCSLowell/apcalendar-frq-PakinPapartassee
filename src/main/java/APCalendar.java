@@ -58,6 +58,6 @@ public class APCalendar
   {
     int num = firstDayofYear(year);
     int days = dayOfYear(month,day,year);
-    return Math.abs(days%7)-num;
+    return (num+days-1)%7;
   }
 }
